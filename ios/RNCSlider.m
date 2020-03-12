@@ -12,6 +12,12 @@
   float _unclippedValue;
 }
 
+- (void)setValue:(float)value animated:(BOOL)animated
+{
+  _unclippedValue = value;
+  [super setValue:value animated:animated];
+}
+
 - (void)setValue:(float)value
 {
   _unclippedValue = value;
